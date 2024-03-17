@@ -13,9 +13,15 @@ androidx-test-junit = "1.1.5"
 compose = "1.6.2"
 compose-plugin = "1.6.0"
 junit = "4.13.2"
+kotestFrameworkEngine = "5.9.0.1436-SNAPSHOT"
+kotestFrameworkEngineJs = "5.9.0.1436-SNAPSHOT"
 kotlin = "1.9.22"
 
 [libraries]
+kotest-framework-engine = { module = "io.kotest:kotest-framework-engine", version.ref = "kotestFrameworkEngine" }
+kotest-assertion = { module = "io.kotest:kotest-assertions-core", version.ref = "kotestFrameworkEngine" }
+kotest-property = { module = "io.kotest:kotest-property", version.ref = "kotestFrameworkEngine" }
+kotest-framework-engine-js = { module = "io.kotest:kotest-framework-engine-js", version.ref = "kotestFrameworkEngineJs" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
